@@ -1,0 +1,17 @@
+<p style="font-size: 1.1em; margin-bottom: 0%; padding-bottom: 0%;"> Take a look at the image below </p> <br>
+<img style="width: 90%; border: 8px solid whitesmoke; border-radius: 5px;" src="https://i.imgur.com/8ab4uZy.png"><br>  
+The above image represents a wordcloud. The size of the words in the image is determined by the number of times they appear in a given document, in this case the given document is the entire script for the Shrek trilogy. 
+<br> 
+clarcbot is a Discord bot that generates wordcloud from the given discord message. <br> <br> 
+<div style="border: 1px solid whitesmoke; border-radius: 10px; padding: 1em; margin-bottom: 1em;">     
+    <p style="font-size: 1.2em; font-weight: 600; margin-bottom: 0%;">How to use?</p> <br> 
+    Step 1 ->     
+    <a href="https://discord.com/api/oauth2/authorize?client_id=817048768171868181&permissions=3072&scope=bot">Get clarcbot on your server!</a> <br>     
+    Step 2 -> Use the bot command:     <code> $wordle _YOUR PARAGRAPH HERE_ </code>     to generate a wordcloud. 
+</div> 
+<div style="border: 1px solid whitesmoke; border-radius: 10px; padding: 1em;">     
+    <p style="font-size: 1.2em; font-weight: 600; margin-bottom: 0%;">How does it work?</p> <br>      
+    Step 1 -> <p>I take out the words from the given document and arrange them by size in a list. I take natural log of base 2 of every word size to normalize it.</p>     
+    Step 2 -> <p>I place the word on the image, then I check if its on top of another word. If it is, I move the word a little bit on the spiral path and check again. If it's not, I place the word.</p> 
+    <br> 
+</div>
